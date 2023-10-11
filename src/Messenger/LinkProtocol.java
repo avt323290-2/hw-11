@@ -7,7 +7,7 @@ import java.util.Stack;
  * Он содержит стек сообщений для отправки между клиентом и сервером.
  * Дочерние классы, такие как ClientProtocol и ServerProtocol, используют этот протокол для отправки и приема сообщений.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class LinkProtocol {
 

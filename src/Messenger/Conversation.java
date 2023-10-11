@@ -15,7 +15,7 @@ import javax.swing.JTextField;
  * Класс Conversation представляет окно чата в мессенджере для общения с определенным контактом (собеседником).
  * Он позволяет отправлять и принимать сообщения, а также активировать окно чата.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class Conversation {
     private Contact interlocutor;

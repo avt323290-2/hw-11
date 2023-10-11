@@ -11,7 +11,7 @@ import javax.swing.JPanel;
  * Класс Contact представляет контакт в мессенджере, включая имя и статус онлайн/оффлайн.
  * Контакты могут быть кликнуты для активации чата.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class Contact extends JPanel implements Serializable {
     private String name;

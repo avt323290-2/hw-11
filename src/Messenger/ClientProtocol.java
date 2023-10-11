@@ -4,7 +4,7 @@ package Messenger;
  * Класс ClientProtocol является частью мессенджера и реализует протокол обмена данными между клиентом и сервером.
  * Он наследует функциональность LinkProtocol.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class ClientProtocol extends LinkProtocol {
 

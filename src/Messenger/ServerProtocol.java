@@ -8,7 +8,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * Класс ServerProtocol представляет протокол серверной части мессенджера для обработки входящих и исходящих сообщений.
  * Он хранит сообщения, полученные от клиентов, и позволяет отправлять сообщения клиентам.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class ServerProtocol {
 
@@ -25,7 +25,7 @@ public class ServerProtocol {
     public static void processInput(ConnectionMessage m) {
         Message mess;
         while ((mess = m.getMessage()) != null) {
-            System.out.println("message received from " + mess.getSender() + " to " + mess.getRecipient() + ": " + mess.getMessage());
+            System.out.println("Cообщение, полученное от " + mess.getSender() + " для " + mess.getRecipient() + ": " + mess.getMessage());
             sendMessage(mess);
         }
     }

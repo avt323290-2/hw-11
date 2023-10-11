@@ -8,7 +8,7 @@ import java.net.Socket;
  * Класс MessangerServer представляет серверную часть мессенджера.
  * Он слушает и принимает входящие подключения от клиентов на порту 4444 и создает отдельные потоки для каждого клиента.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class MessangerServer {
 

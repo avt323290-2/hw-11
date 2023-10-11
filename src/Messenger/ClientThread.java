@@ -9,7 +9,7 @@ import java.net.Socket;
  * Класс ClientThread представляет собой поток клиента, который обрабатывает входящие и исходящие
  * сообщения с сервером.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class ClientThread implements Runnable {
 

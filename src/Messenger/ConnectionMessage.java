@@ -7,7 +7,7 @@ import java.util.Stack;
  * Класс ConnectionMessage представляет сообщение, которое используется для обмена данными между клиентом и сервером.
  * Содержит информацию о отправителе, текстовых сообщениях, количестве сообщений и онлайн-пользователях.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class ConnectionMessage implements Serializable {
 

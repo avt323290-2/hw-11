@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Класс Message представляет сообщение, которое может быть отправлено между пользователями в мессенджере.
  * Он содержит информацию о отправителе, получателе и текстовом сообщении.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class Message implements Serializable {
 

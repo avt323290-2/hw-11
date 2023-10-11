@@ -24,7 +24,7 @@ import javax.swing.JPopupMenu;
  * добавления, удаления, сохранения и загрузки контактов.
  * Он также обрабатывает контекстное меню контактов и активирует чаты при двойном клике на контакте.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class ContactList extends JPanel {
     private static Vector<Contact> contacts;
@@ -62,7 +62,7 @@ public class ContactList extends JPanel {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         contacts = new Vector<Contact>();
 
-        menu = new JPopupMenu("Opcje");
+        menu = new JPopupMenu("Варианты");
         menu.add(new JMenuItem(new DeleteContactAction()));
 
         load();
@@ -105,7 +105,7 @@ public class ContactList extends JPanel {
             }
             s.close();
         } catch (IOException ex) {
-            Messanger.showError("Błąd zapisu kontaktów");
+            Messanger.showError("Ошибка записи контактов");
         }
     }
 
@@ -119,25 +119,25 @@ public class ContactList extends JPanel {
                 }
                 s.close();
             } catch (ClassNotFoundException ex) {
-                Messanger.showError("Nieprawidłowy plik z kontaktami");
+                Messanger.showError("Неверный файл контактов");
             }
         } catch (FileNotFoundException ex) {
-            Messanger.showError("Plik z kontaktami nie istnieje");
+            Messanger.showError("Файл с контактами не существует");
         } catch (IOException ex) {
-            //Messanger.showError("Błąd odczytu kontaktów");
+            //Messanger.showError("Ошибка чтения контактов");
         }
     }
 
     private class DeleteContactAction extends AbstractAction {
         public DeleteContactAction() {
-            super("Usuń");
+            super("Удалить");
         }
 
         public void actionPerformed(ActionEvent e) {
             int confirmed = JOptionPane.showConfirmDialog(
                     Messanger.getFrame(),
-                    "Usunąć użytkownika " + clickedContact.getContactName() + " z listy?",
-                    "Usuwanie kontaktu",
+                    "Удалить пользователя " + clickedContact.getContactName() + " из списка?",
+                    "Удаление контакта",
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.QUESTION_MESSAGE);
             if (confirmed == JOptionPane.YES_OPTION) {

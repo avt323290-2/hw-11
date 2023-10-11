@@ -4,7 +4,7 @@ package Messenger;
  * Главный класс MainServer представляет точку входа в приложение мессенджера для сервера.
  * В методе `main` создается экземпляр класса `MessangerServer`, который инициализирует и запускает сервер мессенджера.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class MainServer {
 

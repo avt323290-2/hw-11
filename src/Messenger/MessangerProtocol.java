@@ -2,7 +2,7 @@ package Messenger;
 
 /**
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class MessangerProtocol {
 

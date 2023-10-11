@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
  * Класс Messanger представляет мессенджер и управляет основной логикой приложения.
  * Он обрабатывает контакты, сообщения и интерфейс пользователя.
  *
- * @author Blazej
+ * @author Mikhail
  */
 public class Messanger {
 
