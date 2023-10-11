@@ -1,2 +1,9 @@
-package Messenger;public class MessangerProtocol {
+package Messenger;
+
+/**
+ *
+ * @author Blazej
+ */
+public class MessangerProtocol {
+
 }
